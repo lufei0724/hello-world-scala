@@ -1,5 +1,4 @@
 
-val cats = "org.typelevel" %% "cats-effect-laws" % "2.2.0"
 val scalaTest = "org.scalatest" %% "scalatest" % "3.2.1"
 
 ThisBuild / organization := "com.myob.platform"
@@ -9,8 +8,7 @@ ThisBuild / version := "0.1.0-SNAPSHOT"
 lazy val root = (project in file("."))
   .settings(
     name := "helloWorld",
-    libraryDependencies ++= Seq(cats,
-      scalaTest % Test
+    libraryDependencies ++= Seq( scalaTest % Test
     )
   )
 
